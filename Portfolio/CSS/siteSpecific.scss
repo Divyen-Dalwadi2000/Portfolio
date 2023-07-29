@@ -1,0 +1,202 @@
+@import "mixin";
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: rgb(221, 221, 17);
+    font-family: serif;
+    background: rgb(1, 1, 78);
+    scroll-behavior: smooth;
+
+    &.darkmode {
+        background: black;
+        color: white;
+    }
+}
+
+// nesting through '&' = nav
+nav {
+    @include centerDiv();
+    height: 6vh;
+    background: linear-gradient(-45deg, rgb(55, 55, 192, 0.8), rgb(201, 11, 188, 0.8));
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    & .left {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-shadow: 3px 3px #04010c;
+    }
+
+    & ul {
+        @include centerDiv();
+    }
+
+    & ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    & ul li a {
+        color: $text_clr;
+        text-decoration: none;
+    }
+
+    & ul li a:hover {
+        color: rgb(216, 12, 216);
+        text-shadow: 2px 2px #04010c;
+        font-size: 1.02rem;
+        cursor: pointer;
+    }
+}
+
+.firstSection {
+    @include centerDiv();
+    height: 80vh;
+    margin-top: 70px;
+
+    & .leftSection {
+        width: 35%;
+        margin: 20px;
+    }
+
+    & .img {
+        width: 55%;
+    }
+    // nesting through '&' = .rightSection
+    & .rightSection {
+        margin: 30px;
+        width: 30%;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        & .purple {
+            color: rgba(8, 210, 250, 0.747);
+        }
+        & #element {
+            color: rgba(8, 210, 250, 0.747);
+        }
+
+        & .btn {
+            padding: 8px;
+            background: rgb(91, 54, 150);
+            color: $text_clr;
+            border: 1px solid white;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 20px 4px;
+        }
+
+        & .btn:hover {
+            background: linear-gradient(violet, yellow);
+            color: black;
+        }
+    }
+}
+
+.horizontalLine {
+    border: 1px;
+    background: whitesmoke;
+    height: 1.2px;
+    margin: 40px 48px;
+}
+
+.secondSection {
+    @include centerDiv();
+    height: 80vh;
+    margin-top: 70px;
+
+    & .leftSection {
+        width: 35%;
+        margin: 20px;
+    }
+
+    // nesting through '&' = .rightSection
+    & .rightSection {
+        margin: 30px;
+        width: 35%;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        & .container {
+            @include centerDiv;
+            margin: -60px 0px;
+            height: 94vh;
+        }
+
+        & .title {
+            font-size: 26px;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 6px;
+            color: aliceblue;
+            text-shadow: 2px 2px 2px black;
+            border-bottom: 1px solid white;
+        }
+        & .title:hover {
+            font-size: 30px;
+        }
+        & .child {
+            width: 100%;
+            max-width: 378px;
+            background: rgb(249, 1, 203, 0.4);
+            padding: 12px 20px;
+            border-radius: 20px;
+            box-shadow: inset -3px 2px 2px rgb(212, 255, 0);
+        }
+
+        & .icon {
+            margin: 5px;
+            width: 50px;
+            margin-right: 50px;
+        }
+
+        & .github {
+            width: 54px;
+        }
+
+        & .link {
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            color: aliceblue;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        & .link:hover {
+            color: yellowgreen;
+        }
+
+        & .icon-link {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+// ===============================================================
+
+/* 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer svg {
+    display: block;
+    width: 100%;
+    height: auto;
+} */

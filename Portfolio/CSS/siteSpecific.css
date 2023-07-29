@@ -1,97 +1,194 @@
-nav {
-    height: 6vh;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    color: rgb(221, 221, 17);
+    font-family: serif;
+    background: rgb(1, 1, 78);
+    scroll-behavior: smooth;
+}
+
+body.darkmode {
+    background: black;
+    color: white;
+}
+  nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(rgb(55, 55, 192), rgb(109, 11, 201));
-    
-    /* for text */
-    /* background: linear-gradient(red,yellow); 
-     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-
-.left {
-    font-size: 1.3rem;
+    height: 6vh;
+        background: linear-gradient(-45deg, rgba(55, 55, 192, 0.8), rgba(201, 11, 188, 0.8));
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+  nav .left {
+      font-size: 1.5rem;
+      font-weight: 600;
     text-shadow: 3px 3px #04010c;
-}
 
-
-nav ul {
+  nav ul {
     display: flex;
-    justify-content: center;
-}
-
-nav ul li {
+    justify-content: space-around;
+        align-items: center;
+    }
+  nav ul li {
     list-style: none;
     margin: 0 23px;
-}
 
-nav ul li a {
+  nav ul li a {
     color: white;
     text-decoration: none;
-}
 
-nav ul li a:hover {
+  nav ul li a:hover {
     color: rgb(216, 12, 216);
     text-shadow: 2px 2px #04010c;
     font-size: 1.02rem;
     cursor: pointer;
-}
-
 .firstSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 25px 0;
-}
-
-.leftSection {
+    height: 80vh;
+        margin-top: 70px;
+    }
+  .firstSection .leftSection {
     width: 35%;
-}
-
-.leftSection {
     margin: 20px;
-}
 
-.img {
-    width: 70%;
-}
-
-.rightSection {
-    /* margin: 30px; */
+  .firstSection .img {
+      width: 55%;
+  }
+  .firstSection .rightSection {
+      margin: 30px;
     width: 30%;
-}
+    font-size: 1.5rem;
+        font-weight: 600;
 
-.rightSection .btn {
+  .firstSection .rightSection .purple {
+      color: rgba(8, 210, 250, 0.747);
+  }
+
+  .firstSection .rightSection #element {
+      color: rgba(8, 210, 250, 0.747);
+  }
+
+  .firstSection .rightSection .btn {
     padding: 8px;
     background: rgb(91, 54, 150);
     color: white;
     border: 1px solid white;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 1rem;
     cursor: pointer;
-    margin: 12px 0px;
-}
-
-.rightSection .btn:hover {
+    margin: 20px 4px;
+    }
+  .firstSection .rightSection .btn:hover {
     background: linear-gradient(violet, yellow);
     color: black;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
 
-.horizontalLine {
+  .horizontalLine {
     border: 1px;
     background: whitesmoke;
     height: 1.2px;
     margin: 40px 48px;
-}
 
-/* .secondSection
-{
-    height: 150vh;
-} */
+  .secondSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80vh;
+      margin-top: 70px;
+  }
+
+  .secondSection .leftSection {
+      width: 35%;
+      margin: 20px;
+  }
+
+  .secondSection .rightSection {
+      margin: 30px;
+      width: 35%;
+      font-size: 1.5rem;
+      font-weight: 600;
+  }
+
+  .secondSection .rightSection .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: -60px 0px;
+      height: 94vh;
+  }
+
+  .secondSection .rightSection .title {
+      font-size: 26px;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 6px;
+      color: aliceblue;
+      text-shadow: 2px 2px 2px black;
+      border-bottom: 1px solid white;
+  }
+
+  .secondSection .rightSection .title:hover {
+      font-size: 30px;
+  }
+
+  .secondSection .rightSection .child {
+      width: 100%;
+      max-width: 378px;
+      background: rgba(249, 1, 203, 0.4);
+      padding: 12px 20px;
+      border-radius: 20px;
+      box-shadow: inset -3px 2px 2px rgb(212, 255, 0);
+  }
+
+  .secondSection .rightSection .icon {
+      margin: 5px;
+      width: 50px;
+      margin-right: 50px;
+  }
+
+  .secondSection .rightSection .github {
+      width: 54px;
+  }
+
+  .secondSection .rightSection .link {
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      color: aliceblue;
+      text-shadow: 2px 2px 2px black;
+  }
+
+  .secondSection .rightSection .link:hover {
+      color: yellowgreen;
+  }
+
+  .secondSection .rightSection .icon-link {
+      display: flex;
+      align-items: center;
+  }
+
+  /* 
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }
+  
+  .footer svg {
+      display: block;
+      width: 100%;
+      height: auto;
+  } */
+  /*# sourceMappingURL=siteSpecific.css.map */

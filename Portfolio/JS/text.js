@@ -1,7 +1,8 @@
 // Setup and start animation! 
     // function updateText() {
-    var typed = new Typed('#element', {
-        strings: ['Web Developer', 'Youtuber', 'Programmer', 'Vedeo Editor'],
-        typeSpeed: 100,
-    });
-  
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Youtuber', 'Programmer', 'Video Editor'],
+            typeSpeed: 100,
+        });
+      
+    
